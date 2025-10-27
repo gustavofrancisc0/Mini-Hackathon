@@ -1,0 +1,96 @@
+/* Paleta de cores focada em azul */
+:root {
+  --primary-blue: #0066cc;
+  --dark-blue: #004080;
+  --light-blue: #3399ff;
+  --accent-blue: #00aaff;
+  --bg-light: #f0f8ff;
+}
+
+/* Estilização do corpo da página */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  padding-top: 70px;
+  /* Espaço para navbar fixa */
+}
+
+/* Navbar customizada com cor azul */
+.navbar-custom {
+  background: linear-gradient(135deg, var(--dark-blue), var(--primary-blue));
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para os links da navbar */
+.navbar-custom .nav-link {
+  color: white !important;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+/* Efeito hover nos links da navbar */
+.navbar-custom .nav-link:hover {
+  color: var(--accent-blue) !important;
+}
+
+.navbar-custom .nav-link.active {
+  color: var(--accent-blue) !important;
+  font-weight: 600;
+}
+
+/* Estilização da seção hero (topo da página) */
+.hero-section {
+  background: linear-gradient(135deg, var(--primary-blue), var(--light-blue));
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+}
+
+/* Estilo para cards de serviços */
+.service-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  border-radius: 15px;
+  height: 100%;
+}
+
+/* Efeito hover nos cards */
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 102, 204, 0.3);
+}
+
+/* Ícones dentro dos cards */
+.service-icon {
+  font-size: 3rem;
+  color: var(--primary-blue);
+  margin-bottom: 20px;
+}
+
+/* Seção com fundo claro */
+.bg-light-custom {
+  background-color: var(--bg-light);
+}
+
+/* Estilização do rodapé */
+.footer {
+  background: linear-gradient(135deg, var(--dark-blue), var(--primary-blue));
+  color: white;
+  padding: 40px 0 20px 0;
+}
+
+/* Botões personalizados com cor azul */
+.btn-custom {
+  background-color: var(--primary-blue);
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+}
+
+/* Efeito hover no botão */
+.btn-custom:hover {
+  background-color: var(--dark-blue);
+  color: white;
+}
