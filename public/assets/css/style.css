@@ -14,7 +14,11 @@ body {
   padding-top: 70px;
   /* Espaço para navbar fixa */
 }
-
+/*configuraçao da section stats*/
+.stats-section h2{
+  font-size: 3rem;
+  color: #fff;
+}
 /* Navbar customizada com cor azul */
 .navbar-custom {
   background: linear-gradient(135deg, var(--dark-blue), var(--primary-blue));
