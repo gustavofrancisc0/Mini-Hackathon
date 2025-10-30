@@ -14,6 +14,9 @@ body {
   padding-top: 70px;
   /* Espaço para navbar fixa */
 }
+.stats-section{
+  background-color: var(--dark-blue);
+}
 /*configuraçao da section stats*/
 .stats-section h2{
   font-size: 3rem;
