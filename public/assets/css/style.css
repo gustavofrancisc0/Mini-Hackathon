@@ -101,3 +101,165 @@ body {
   background-color: var(--dark-blue);
   color: white;
 }
+
+/* ========================================
+   MEDIA QUERIES PERSONALIZADAS
+   ======================================== */
+
+/* Dispositivos móveis pequenos (até 576px) */
+@media (max-width: 576px) {
+  /* Ajusta padding do body para telas pequenas */
+  body {
+    padding-top: 60px;
+  }
+
+  /* Reduz tamanho do título hero em mobile */
+  .hero-section h1 {
+    font-size: 2rem !important;
+  }
+
+  .hero-section p {
+    font-size: 1rem !important;
+  }
+
+  /* Ajusta tamanho dos ícones de serviço */
+  .service-icon {
+    font-size: 2rem;
+  }
+
+  /* Reduz padding da seção hero */
+  .hero-section {
+    padding: 60px 0;
+  }
+
+  /* Ajusta tamanho da fonte nas estatísticas */
+  .stats-section h2 {
+    font-size: 2rem !important;
+  }
+
+  /* Botões ocupam largura total em mobile */
+  .btn-custom {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+/* Tablets (576px até 768px) */
+@media (min-width: 576px) and (max-width: 768px) {
+  /* Ajusta tamanho do título hero para tablets */
+  .hero-section h1 {
+    font-size: 2.5rem !important;
+  }
+
+  /* Ajusta padding da hero section */
+  .hero-section {
+    padding: 80px 0;
+  }
+
+  /* Ícones de serviço com tamanho médio */
+  .service-icon {
+    font-size: 2.5rem;
+  }
+
+  /* Ajusta estatísticas para tablets */
+  .stats-section h2 {
+    font-size: 2.5rem;
+  }
+}
+
+/* Tablets e dispositivos médios (768px até 992px) */
+@media (min-width: 768px) and (max-width: 992px) {
+  /* Navbar com espaçamento ajustado */
+  .navbar-custom .nav-link {
+    padding: 0.5rem 0.8rem;
+  }
+
+  /* Cards de serviço com hover suave */
+  .service-card:hover {
+    transform: translateY(-5px);
+  }
+
+  /* Ajusta footer para tablets */
+  .footer {
+    padding: 30px 0 15px 0;
+  }
+}
+
+/* Desktops (992px até 1200px) */
+@media (min-width: 992px) and (max-width: 1200px) {
+  /* Container com largura otimizada */
+  .container {
+    max-width: 960px;
+  }
+
+  /* Hero section com padding maior */
+  .hero-section {
+    padding: 120px 0;
+  }
+
+  /* Ícones de serviço em tamanho padrão */
+  .service-icon {
+    font-size: 3.5rem;
+  }
+}
+
+/* Telas grandes (acima de 1200px) */
+@media (min-width: 1200px) {
+  /* Hero section com padding generoso */
+  .hero-section {
+    padding: 140px 0;
+  }
+
+  /* Aumenta tamanho dos ícones em telas grandes */
+  .service-icon {
+    font-size: 4rem;
+  }
+
+  /* Cards com sombra mais pronunciada no hover */
+  .service-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 15px 40px rgba(0, 102, 204, 0.4);
+  }
+
+  /* Container com largura máxima para telas grandes */
+  .container {
+    max-width: 1140px;
+  }
+}
+
+/* Media Query para impressão */
+@media print {
+  /* Remove navbar ao imprimir */
+  .navbar-custom {
+    display: none;
+  }
+
+  /* Remove footer ao imprimir */
+  .footer {
+    display: none;
+  }
+
+  /* Remove padding do body */
+  body {
+    padding-top: 0;
+  }
+
+  /* Força cores de texto para impressão */
+  body {
+    color: #000;
+  }
+}
+
+/* Media Query para modo paisagem em tablets */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  /* Ajusta hero section para modo paisagem */
+  .hero-section {
+    padding: 60px 0;
+  }
+
+  /* Reduz espaçamento entre elementos */
+  .service-card {
+    margin-bottom: 1rem;
+  }
+}
+
